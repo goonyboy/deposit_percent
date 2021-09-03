@@ -11,6 +11,7 @@ deposit_SKB = int((per_cent['СКБ'] * money / 100))
 deposit_VTB = int((per_cent['ВТБ'] * money / 100))
 deposit_SBER = int((per_cent['СБЕР'] * money / 100))
 deposit = [deposit_TKB, deposit_SKB, deposit_VTB, deposit_SBER]
+print('Сумма за год разных банков из словаря:', deposit)
 inverse = [(value, key) for key, value in per_cent.items()]
 print('Максимальный доход за год по депозиту составит', max(deposit), 'рублей в банке', max(inverse)[1])
 
